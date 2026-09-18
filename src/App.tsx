@@ -47,7 +47,7 @@ const pin=new L.Icon({iconUrl:'https://unpkg.com/leaflet@1.9.4/dist/images/marke
 const mapsUrl=(query:string)=>'https://www.google.com/maps/search/?api=1&query='+encodeURIComponent(query);
 const appleUrl=(query:string)=>'https://maps.apple.com/?q='+encodeURIComponent(query);
 
-function Card({children,className='' }:{children:React.ReactNode;className?:string}){return <section className={'card '+className}>{children}</section>}
+function Card({children,className='',style}:{children:React.ReactNode;className?:string;style?:React.CSSProperties}){return <section className={'card '+className} style={style}>{children}</section>}
 function Header({eyebrow,title}:{eyebrow:string;title:string}){return <header><div className="eyebrow">{eyebrow}</div><h1>{title}</h1></header>}
 function Chips({items,active,onChange}:{items:string[];active:string;onChange:(x:string)=>void}){return <div className="chips">{items.map(x=><button className={active===x?'active':''} onClick={()=>onChange(x)} key={x}>{x}</button>)}</div>}
 function MapLinks({query}:{query:string}){return <div className="card-actions"><a href={appleUrl(query)} target="_blank" rel="noreferrer"><Navigation size={14}/> Apple Maps</a><a href={mapsUrl(query)} target="_blank" rel="noreferrer"><ExternalLink size={14}/> Google Maps</a></div>}
