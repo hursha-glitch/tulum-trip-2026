@@ -6,12 +6,11 @@ type FoodItem={name:string;cuisine:string;area:string;tags:string[];vegetarian:b
 type Idea={name:string;category:string;description:string;time:string;weather:string;place?:string};
 
 const days:Day[]=[
-{date:'Tue, Oct 27',title:'Arrive + exhale',subtitle:'Easy arrival, sunset and dinner',vibe:'Slow start',color:'Arrival',stops:['CUN 12:00 PM','Resort check-in','Pool / beach','Sunset','Dinner']},
-{date:'Wed, Oct 28',title:'Lagoon + Maya',subtitle:'Sian Ka’an • Muyil • Mayan canal',vibe:'Adventure',color:'Water',stops:['Breakfast','Sian Ka’an','Muyil ruins','Mayan canal','Dinner']},
-{date:'Thu, Oct 29',title:'Coba + cenote + beach',subtitle:'Jungle history, water and sand',vibe:'Explore',color:'Culture',stops:['Breakfast','Coba','Cenote','Playa Paraíso','Sunset']},
-{date:'Fri, Oct 30',title:'Tulum your way',subtitle:'Pueblo, markets, beach zone and night',vibe:'Local life',color:'Local',stops:['Breakfast','Tulum Pueblo','Local market','Beach zone','Dinner + evening']},
-{date:'Sat, Oct 31',title:'Slow day',subtitle:'Spa, pool, beach and Halloween',vibe:'Wellness',color:'Relax',stops:['Sleep in','Spa / massage','Pool / beach','Sunset','Halloween evening']},
-{date:'Sun, Nov 1',title:'Hasta luego',subtitle:'Breakfast, check-out and CUN',vibe:'Departure',color:'Travel',stops:['Breakfast','Check-out','CUN 11:30 AM']}];
+{date:'Wed, Oct 28',title:'Arrive + exhale',subtitle:'Easy arrival, resort check-in, sunset and dinner',vibe:'Slow start',color:'Arrival',stops:['Arrive in Cancún','Transfer to UNICO Riviera Maya','Resort check-in','Pool / beach','Dinner']},
+{date:'Thu, Oct 29',title:'Lagoon + Maya',subtitle:'Sian Ka’an • Muyil • Mayan canal',vibe:'Adventure',color:'Water',stops:['Breakfast','Sian Ka’an','Muyil ruins','Mayan canal','Dinner at the resort']},
+{date:'Fri, Oct 30',title:'Coba + cenote + beach',subtitle:'Jungle history, water and sand',vibe:'Explore',color:'Culture',stops:['Breakfast','Coba','Cenote','Playa Paraíso','Dinner']},
+{date:'Sat, Oct 31',title:'Tulum your way',subtitle:'Pueblo, markets, beach zone and Halloween evening',vibe:'Local life',color:'Local',stops:['Breakfast','Tulum Pueblo','Local market','Beach zone','Dinner + Halloween evening']},
+{date:'Sun, Nov 1',title:'Hasta luego',subtitle:'Breakfast, check-out and transfer to Cancún airport',vibe:'Departure',color:'Travel',stops:['Breakfast','Check-out','Transfer to CUN','Departure']}];
 
 const places:Place[]=[
 {name:'Sian Ka’an + Muyil',category:'Water',area:'Muyil',lat:19.42,lng:-87.75,description:'Lagoon, jungle and the Maya canal float. A relaxed half-day nature adventure.',maps:'Sian Ka\'an Muyil Tulum Mexico'},
@@ -68,8 +67,8 @@ const day=days[selectedDay]??days[0];const baseStops=[...day.stops,...custom.fil
 const suggestion=weather==='Rain'?'Rain is the signal to slow down: choose a café, spa or food crawl.':mood==='Beach'?'Head for the beach and protect golden hour.':mood==='Food'?'Make the next move a local food stop.':mood==='Adventure'?'Choose the most memorable activity on today’s route.':mood==='Romance'?'Keep the pace slow and make the next stop a two-person moment.':'Follow the itinerary, but leave one hour completely unplanned.';
 const addIdea=(name:string)=>{if(!custom.includes(name))setCustom([...custom,name]);else setCustom(custom.filter(x=>x!==name));};
 const removeCustom=(name:string)=>setCustom(custom.filter(x=>x!==name));
-return <><Header eyebrow="RIVIERA MAYA • OCT 27 — NOV 1" title="What should we do right now?"/>
-<Card className="hero-card"><div className="hero"><div className="eyebrow">{day.date.toUpperCase()} • {day.vibe.toUpperCase()}</div><h2>{day.title}</h2><p>{day.subtitle}</p><div className="hero-stat"><span><Sun size={15}/> Next up</span><b>{remaining[0]??'Everything done 🎉'}</b></div><div className="actions"><Link to="/map" className="primary">Open map <ChevronRight size={16}/></Link><button onClick={()=>setLate(!late)}><Clock3 size={16}/>{late?'Normal pace':'We’re running late'}</button></div></div></Card>
+return <><Header eyebrow="RIVIERA MAYA • OCT 28 — NOV 1" title="What should we do right now?"/>
+<Card className="hero-card"><div className="hero"><div className="eyebrow">{day.date.toUpperCase()} • {day.vibe.toUpperCase()}</div><h2>{day.title}</h2><p>{day.subtitle}</p><div className="hotel-pill"><span>STAYING AT</span><b>UNICO Riviera Maya</b></div><div className="hero-stat"><span><Sun size={15}/> Next up</span><b>{remaining[0]??'Everything done 🎉'}</b></div><div className="actions"><Link to="/map" className="primary">Open map <ChevronRight size={16}/></Link><button onClick={()=>setLate(!late)}><Clock3 size={16}/>{late?'Normal pace':'We’re running late'}</button></div></div></Card>
 <div className="day-strip">{days.map((d,i)=><button key={d.date} className={selectedDay===i?'selected':''} onClick={()=>setSelectedDay(i)}><small>{d.date.split(',')[0]}</small><b>{d.date.split(',')[1]}</b></button>)}</div>
 <Card className="brain"><div className="eyebrow">TRIP BRAIN</div><h3>What are you feeling?</h3><Chips items={['Surprise me','Beach','Food','Adventure','Romance']} active={mood} onChange={setMood}/><div className="actions" style={{marginTop:4}}><button onClick={()=>setWeather(weather==='Sunny'?'Rain':'Sunny')}><span>{weather==='Rain'?<CloudRain size={15}/>:<Sun size={15}/>}</span>{weather==='Rain'?'Rain mode on':'Weather looks good'}</button></div><div className="recommend"><Sparkles size={18}/><span><b>Best next move</b>{suggestion}</span></div></Card>
 {weather==='Rain'&&<div className="notice"><CloudRain size={17}/><span><b>Weather Escape Hatch:</b> Rain mode is active. See Explore for indoor/covered alternatives.</span></div>}
