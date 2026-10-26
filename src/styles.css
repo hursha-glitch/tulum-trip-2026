@@ -30,3 +30,17 @@
 .flight-line i{display:flex;align-items:center;justify-content:center;white-space:nowrap;border-top:1px solid #d9d0c1;padding-top:5px}
 .flight-route b{font-size:clamp(19px,5vw,22px)}
 @media(max-width:380px){.flight-route{grid-template-columns:minmax(0,1fr) 68px minmax(0,1fr);column-gap:7px}.flight-route strong{font-size:13px}.flight-line span,.flight-line small{font-size:9px}}
+
+/* Consistent map actions and mobile typography */
+.card-actions{flex-wrap:wrap;align-items:center;row-gap:8px}
+.map-actions{display:flex;flex-wrap:wrap;gap:8px;border-top:1px solid #eee8dc;margin-top:12px;padding-top:12px}
+.map-actions a{border:1px solid #e4ded3;background:#f8f5ef;color:#173f3b;text-decoration:none;border-radius:999px;padding:8px 12px;display:inline-flex;align-items:center;justify-content:center;gap:7px;font-size:12px;font-weight:650;line-height:1.2;letter-spacing:0;white-space:nowrap;min-height:38px}
+.map-actions a:first-child,.map-actions a:last-child{border-radius:999px;margin-left:0}
+.map-logo,.map-logo svg{width:21px;height:21px;flex:none}
+.food-pick-action{border-top:0;margin-top:10px;padding-top:0}
+.idea-detail{line-height:1.45;gap:8px;overflow-wrap:anywhere}
+.idea-detail .map-actions{margin-top:5px}
+.card h3{line-height:1.2;letter-spacing:-.015em;overflow-wrap:anywhere}
+.card p{line-height:1.55;overflow-wrap:anywhere}
+.eyebrow{line-height:1.4;letter-spacing:.13em}
+@media(max-width:380px){.map-actions{gap:6px}.map-actions a{padding:7px 10px;font-size:11px;min-height:36px}.map-logo,.map-logo svg{width:19px;height:19px}}
