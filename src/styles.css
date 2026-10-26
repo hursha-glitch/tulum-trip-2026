@@ -7,3 +7,14 @@
 
 
 .flight-card h3{font-size:19px;margin:12px 0}.flight-route{display:grid;grid-template-columns:1fr 1.1fr 1fr;align-items:center;gap:8px;padding:10px 0}.flight-route>div:not(.flight-line){display:flex;flex-direction:column;gap:3px}.flight-route b{font-size:21px;letter-spacing:.04em}.flight-route span{font-size:11px;color:#7d8179}.flight-route strong{font-size:14px;margin-top:4px}.flight-line{display:flex;flex-direction:column;align-items:center;gap:4px;color:#8b6d4e}.flight-line span,.flight-line small{font-size:10px}.flight-line i{width:100%;font-size:22px;font-style:normal;text-align:center;border-top:1px solid #d9d0c1;line-height:1.1;padding-top:4px}.flight-card p{font-size:12px;margin:4px 0}.flight-divider{height:1px;background:#eee8dc;margin:14px 0}.confirmation{display:flex;align-items:center;justify-content:space-between;background:#f1eadf;border-radius:12px;padding:11px 12px;margin-top:12px}.confirmation span{font-size:11px;color:#68736f}.confirmation b{letter-spacing:.08em}.flight-card .flight-note{margin-top:12px;font-size:11px}
+
+
+/* Prominent next-flight panel on the home screen */
+.flight-feature{border-color:#d9c7a8;background:linear-gradient(145deg,#fff 0%,#fbf5e9 100%)}
+.flight-feature-top{display:flex;align-items:center;justify-content:space-between;gap:8px}
+.flight-countdown{font-size:10px;font-weight:800;letter-spacing:.04em;color:#173f3b;background:#e5eee7;border-radius:99px;padding:7px 10px;white-space:nowrap}
+.flight-buttons{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:14px}
+.flight-buttons a,.flight-secondary{display:flex;align-items:center;justify-content:center;gap:7px;border-radius:13px;padding:12px 10px;font-size:12px;font-weight:750;text-decoration:none;text-align:center}
+.flight-primary{background:#173f3b;color:#fff}
+.flight-secondary{background:#f1eadf;border:1px solid #e4ded3;color:#173f3b}
+@media(max-width:390px){.flight-buttons{grid-template-columns:1fr}.flight-countdown{font-size:9px;padding:6px 8px}}
