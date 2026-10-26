@@ -81,3 +81,9 @@
 
 /* GPS location controls */
 .location-tools{margin:4px 0 12px;padding:12px 13px;background:#f7f4ed;border:1px solid #ece5d9;border-radius:15px}.location-button{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:0;border-radius:12px;background:#173f3b;color:#fff;padding:11px 14px;font:inherit;font-size:13px;font-weight:750;cursor:pointer}.location-button:disabled{opacity:.65;cursor:wait}.location-status{font-size:11px;line-height:1.5;color:#64736b;margin:8px 1px 0}.location-status:empty{display:none}
+
+
+/* Compact daily weather card on the map page */
+.weather-box{margin:0 0 14px;padding:14px 16px;border:1px solid #e8e4d8;border-radius:17px;background:linear-gradient(120deg,#fbf8ef,#f1f6f1);color:#203e37}
+.weather-top{display:flex;align-items:flex-start;justify-content:space-between;gap:12px}.weather-top h3{margin:3px 0 0;font-size:16px;line-height:1.25}.weather-source{font-size:10px;color:#63766d;white-space:nowrap;padding-top:2px}
+.weather-main{display:flex;align-items:center;gap:12px;margin:12px 0 10px}.weather-emoji{font-size:34px;line-height:1}.weather-temp{font-size:29px;font-weight:800;letter-spacing:-.04em;line-height:1.1}.weather-condition{font-size:12px;font-weight:750;margin-top:2px}.weather-feels{font-size:10px;color:#68766f;margin-top:2px}.weather-highlow{margin-left:auto;text-align:right;display:flex;flex-direction:column;gap:3px}.weather-highlow b{font-size:14px}.weather-highlow span{font-size:10px;color:#68766f}.weather-details{display:flex;flex-wrap:wrap;gap:8px 18px;font-size:11px;color:#435b52}.weather-footer{font-size:9px;color:#7b867e;margin-top:10px;padding-top:8px;border-top:1px solid #e2e6dc}.weather-muted{font-size:12px;color:#69766f;margin:12px 0 2px}
