@@ -18,3 +18,14 @@
 .flight-primary{background:#173f3b;color:#fff}
 .flight-secondary{background:#f1eadf;border:1px solid #e4ded3;color:#173f3b}
 @media(max-width:390px){.flight-buttons{grid-template-columns:1fr}.flight-countdown{font-size:9px;padding:6px 8px}}
+
+
+/* Keep the airport route balanced on narrow screens */
+.flight-route{grid-template-columns:minmax(0,1fr) minmax(76px,.9fr) minmax(0,1fr);column-gap:12px}
+.flight-route>div:first-child{text-align:left;align-items:flex-start;min-width:0}
+.flight-route>div:last-child{text-align:right;align-items:flex-end;min-width:0}
+.flight-route>div:not(.flight-line) span{white-space:normal;line-height:1.25}
+.flight-line{min-width:0}
+.flight-line i{display:flex;align-items:center;justify-content:center;white-space:nowrap;border-top:1px solid #d9d0c1;padding-top:5px}
+.flight-route b{font-size:clamp(19px,5vw,22px)}
+@media(max-width:380px){.flight-route{grid-template-columns:minmax(0,1fr) 68px minmax(0,1fr);column-gap:7px}.flight-route strong{font-size:13px}.flight-line span,.flight-line small{font-size:9px}}
