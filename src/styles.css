@@ -69,3 +69,11 @@
 .drive-distance{display:flex;align-items:center;gap:5px;margin:5px 0 8px;color:#53756c;font-size:12px;font-weight:650;line-height:1.35}.drive-distance svg{flex-shrink:0}
 
 .rating-star-wrap{position:relative;display:inline-block;line-height:1;vertical-align:middle;color:#c7ccc6}.rating-star-empty{display:block;color:#c7ccc6}.rating-star-fill{position:absolute;left:0;top:0;display:block;overflow:hidden;white-space:nowrap;color:#e5a11a;width:0;line-height:1}
+
+.food-sort{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin:4px 0 8px}
+.food-sort-label{font-size:10px;font-weight:800;letter-spacing:.12em;color:#6b776f;white-space:nowrap}
+.food-sort .chips{margin:0;gap:6px}
+.food-sort .chips button{padding:8px 12px;font-size:12px}
+.price-note{font-size:11px;line-height:1.45;color:#737b73;margin:0 0 13px}
+.food-title{display:flex;align-items:center;justify-content:space-between;gap:10px}
+.price-tier{flex-shrink:0;display:inline-flex;align-items:center;justify-content:center;min-width:28px;padding:3px 7px;border-radius:8px;background:#f3eee3;color:#42675b;font-size:13px;font-weight:850;letter-spacing:.02em}
