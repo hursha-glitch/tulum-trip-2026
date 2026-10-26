@@ -4,3 +4,6 @@
 .hotel-pill{display:flex;flex-direction:column;gap:3px;margin:14px 0 6px;padding:10px 12px;border:1px solid rgba(255,255,255,.28);border-radius:12px;background:rgba(255,255,255,.10)}
 .hotel-pill span{font-size:10px;letter-spacing:.13em;font-weight:700;opacity:.78}
 .hotel-pill b{font-size:14px;font-weight:700}
+
+
+.flight-card h3{font-size:19px;margin:12px 0}.flight-route{display:grid;grid-template-columns:1fr 1.1fr 1fr;align-items:center;gap:8px;padding:10px 0}.flight-route>div:not(.flight-line){display:flex;flex-direction:column;gap:3px}.flight-route b{font-size:21px;letter-spacing:.04em}.flight-route span{font-size:11px;color:#7d8179}.flight-route strong{font-size:14px;margin-top:4px}.flight-line{display:flex;flex-direction:column;align-items:center;gap:4px;color:#8b6d4e}.flight-line span,.flight-line small{font-size:10px}.flight-line i{width:100%;font-size:22px;font-style:normal;text-align:center;border-top:1px solid #d9d0c1;line-height:1.1;padding-top:4px}.flight-card p{font-size:12px;margin:4px 0}.flight-divider{height:1px;background:#eee8dc;margin:14px 0}.confirmation{display:flex;align-items:center;justify-content:space-between;background:#f1eadf;border-radius:12px;padding:11px 12px;margin-top:12px}.confirmation span{font-size:11px;color:#68736f}.confirmation b{letter-spacing:.08em}.flight-card .flight-note{margin-top:12px;font-size:11px}
