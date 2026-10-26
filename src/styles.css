@@ -68,4 +68,4 @@
 
 .drive-distance{display:flex;align-items:center;gap:5px;margin:5px 0 8px;color:#53756c;font-size:12px;font-weight:650;line-height:1.35}.drive-distance svg{flex-shrink:0}
 
-.rating-star{display:inline-block;color:transparent;background-clip:text;-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.rating-star-wrap{position:relative;display:inline-block;line-height:1;vertical-align:middle;color:#c7ccc6}.rating-star-empty{display:block;color:#c7ccc6}.rating-star-fill{position:absolute;left:0;top:0;display:block;overflow:hidden;white-space:nowrap;color:#e5a11a;width:0;line-height:1}
