@@ -65,3 +65,5 @@
 .review-summary p{margin:0;color:#4f625b;font-size:12px;line-height:1.5}
 .review-summary p b{color:#173f3b}
 .review-summary>span{display:block;margin-top:7px;font-size:10px;line-height:1.4;color:#8b8174}
+
+.drive-distance{display:flex;align-items:center;gap:5px;margin:5px 0 8px;color:#53756c;font-size:12px;font-weight:650;line-height:1.35}.drive-distance svg{flex-shrink:0}
