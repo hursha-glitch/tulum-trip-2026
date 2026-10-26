@@ -15,6 +15,7 @@
 .flight-countdown{font-size:10px;font-weight:800;letter-spacing:.04em;color:#173f3b;background:#e5eee7;border-radius:99px;padding:7px 10px;white-space:nowrap}
 .flight-buttons{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:14px}
 .flight-buttons a,.flight-secondary{display:flex;align-items:center;justify-content:center;gap:7px;border-radius:13px;padding:12px 10px;font-size:12px;font-weight:750;text-decoration:none;text-align:center}
+.flight-buttons a:last-child{grid-column:1/-1}
 .flight-primary{background:#173f3b;color:#fff}
 .flight-secondary{background:#f1eadf;border:1px solid #e4ded3;color:#173f3b}
 @media(max-width:390px){.flight-buttons{grid-template-columns:1fr}.flight-countdown{font-size:9px;padding:6px 8px}}
