@@ -54,3 +54,14 @@
 
 .rating-disclaimer{font-size:11px;line-height:1.45;color:#7d8179;margin:-3px 2px 12px}
 .food-main{flex:1;min-width:0}
+
+
+/* Compact food rating and review summary */
+.google-rating{gap:8px;margin:9px 0 2px}
+.google-g,.rating-count{display:none}
+.rating-stars{font-size:15px;letter-spacing:.04em}
+.rating-number{font-size:14px}
+.review-summary{margin-top:13px;padding:12px 13px;background:#f7f4ed;border:1px solid #ece5d9;border-radius:15px}
+.review-summary p{margin:0;color:#4f625b;font-size:12px;line-height:1.5}
+.review-summary p b{color:#173f3b}
+.review-summary>span{display:block;margin-top:7px;font-size:10px;line-height:1.4;color:#8b8174}
